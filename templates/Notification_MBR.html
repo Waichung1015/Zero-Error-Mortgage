@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notification Page</title>
+</head>
+<body>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <div align="center">
+        <style>
+           ul {list-style-type: none;margin: 0;padding: 0;width: 200px;background-color: #f1f1f1;}
+           li a {display: block;color: #000;padding: 10px 18px;text-decoration: none;}
+           li a:hover {background-color: #4CAF50;color: white;text-decoration: none;}
+         </style>
+         <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Information has been accepted by the Broker</h2>
+
+              <form  method="get" action="{{ url_for('EmployerHomePage') }}" style ="height: 500px">
+                  <button type="submit">return to Main Page</button>
+               </form>
+    </div>
+</body>
+</html>

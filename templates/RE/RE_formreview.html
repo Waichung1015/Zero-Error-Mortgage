@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RE Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+-->
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">RE Company</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="./RE_form.html">Get Appraisal</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dear {{ name }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./RE_main_page.html">Log out</a>
+        </div>
+      </li>
+    </ul>
+</nav>
+<div class="container"><br>
+    <h4 class="display-5" align="center">You have submitted Appraisal</h4>
+    <h4 class="display-5" align="center">Your insurance ID: {{ ID }}</h4>
+<form method="get" action="{{ url_for('RE_main') }}">
+    <div class="from-group">
+        <label for="MIsID">House ID: </label>
+        <input type="text" class="form-control" name="MIsID" id="MIsID" placeholder="{{ rows.MIsID }}"/>
+
+    </div>
+    <div class="from-group">
+        <label for="name">Name: </label>
+        <input type="text" class="form-control" name="Name" id="name" placeholder="{{ rows.name }}"/>
+
+    </div>
+    <div class="from-group">
+        <label for="mortgageID">Mortgage ID: </label>
+        <input type="text" class="form-control" name="mortgage_id" id="mortgageID" placeholder="{{ rows.mortgage_id }}"/>
+
+    </div>
+    <br>
+    <br>
+    <input class="btn btn-primary" role="button" type="submit" value="Go Back">
+</form>
+</div>
+</body>
+</html>

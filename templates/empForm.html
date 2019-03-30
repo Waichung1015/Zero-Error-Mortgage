@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employer Form</title>
+</head>
+<body>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='glyphicon glyphicon-cloud' style='font-size:50px;width:100;color:grey'></i> Welcome to Employer's Portal</center></h1>
+    <div align="center">
+        <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Employer Form</h2>
+        <form method="post" action="{{ url_for('EmpForm', empid=empid) }}" >
+                        <input type="text" name="employerName" placeholder="Your Name.." color="grey" style="height: 40px;width:500px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="employerTitle" placeholder="Your title.." color="grey" style="height: 40px;width:500px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="employerDepartment" placeholder="Your department.." color="grey" style="height: 40px;width:500px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="employeeName" placeholder=" The employees you help: enter employee name.." color="grey" style="height: 40px;width:500px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="employeeID" placeholder="The employee's ID.." color="grey" style="..." required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="submit" value="Submit"/>
+            </form>
+    </div>
+
+
+</body>
+</html>

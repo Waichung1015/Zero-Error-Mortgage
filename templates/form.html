@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='glyphicon glyphicon-cloud' style='font-size:50px;width:100;color:grey'></i> Welcome to Employer's Portal</center></h1>
+    <div align="center">
+    <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Employee Form</h2>
+        <form method="post" action="{{ url_for('EmployerPortalForm', empid=empid) }}" >
+                        <input type="text" name="mortgageID" placeholder="Mortgage ID .. " color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="url" placeholder="link to broker web service.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <button type="submit">Save</button>
+            </form>
+        <br>
+        <a href="{{ url_for('ViewAgree', empid=empid) }}">Ready to Agree</a>
+    </div>
+
+</body>
+</html>

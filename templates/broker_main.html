@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>Zero Error Mortgage main page</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='fab fa-asymmetrik fa-spin' style='font-size:50px;width:100;color:blue'></i> Zero Error Mortgage</center></h1>
+    <div align="center">
+        <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Get what you want immediately</h2>
+        <form method="post" action="{{ url_for('broker_login') }}" >
+                        <input type="text" name="email" placeholder="email.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
+                        <input type="text" name="password" placeholder="password.." color="grey"
+                               style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
+                        <input type="submit" value="Sign in" />
+            </form>
+        <p style='"Comic Sans MS", cursive, sans-serif'> No account? <a href="./broker_signUp.html">Sign up </a>here</p>
+        <p style='"Comic Sans MS", cursive, sans-serif'>Continue in Employer's Portal<a href="./emp_main.html"> Click here </a> </p>
+        <!--<h1>Zero Error Mortgage</h1>//-->
+    </div>
+
+</head>
+</html>

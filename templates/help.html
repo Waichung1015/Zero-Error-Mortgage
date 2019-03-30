@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employer help Home Page</title>
+</head>
+<body>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='glyphicon glyphicon-cloud' style='font-size:50px;width:100;color:grey'></i> Welcome to Employer's Portal</center></h1>
+    <div align="center">
+         <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:200%;line-height: 4.5;'> Hello, Employer </h2>
+        <p style='"Comic Sans MS", cursive, sans-serif;'> Please enter the employee you help </p>
+         <form method="post" action="{{ url_for('Help') }}" >
+                        <input type="text" name="empName" placeholder="employee Name.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="empDpt" placeholder="employee Department.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="submit" value="Go to Form"/><br>
+            </form>
+
+
+    </div>
+</body>
+</html>

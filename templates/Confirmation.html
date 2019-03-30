@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Submission Confirmation</h1>
+<p>We have recieved your application, your mortgage Number is: {{ mortgageid }}</p>
+<form method="post" action="{{ url_for('broker_userMenu', userid=userid) }}">
+    <button type="submit">Return to User Menu</button>
+</form>
+</body>
+</html>

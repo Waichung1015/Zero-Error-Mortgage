@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Insurance Details</title>
+</head>
+<body>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='fab fa-asymmetrik fa-spin' style='font-size:50px;width:100;color:blue'></i> Zero Error Mortgage</center></h1>
+    <div align="center">
+        <style>
+           ul {list-style-type: none;margin: 0;padding: 0;width: 200px;background-color: #f1f1f1;}
+           li a {display: block;color: #000;padding: 10px 18px;text-decoration: none;}
+           li a:hover {background-color: #4CAF50;color: white;}
+         </style>
+        <h2 align="center">Insurance Details</h2>
+        <ul style="line-height:3">
+            <ol>User ID: {{ userid }}</ol>
+            <ol>Username: {{ username }}</ol>
+            <ol>Real Name:{{ rows.user_realname }}</ol>
+            <ol>Mortgage ID: {{ rows.mortgage_id }}</ol>
+            <ol>Insurance Value: {{ rows.insurance_value }}</ol>
+            <ol>Deductible Value: {{ rows.deductible_value }}</ol>
+            <ol>House ID: {{ rows.MIsID }}</ol>
+            </ul>
+            <ol><form action="{{ url_for('broker_userMenu', userid=userid) }}" method="get">
+               <button type="submit">return to user menu</button>
+      </form></ol>
+    </div>
+
+</body>
+</html>

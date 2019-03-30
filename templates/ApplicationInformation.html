@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application</title>
+</head>
+<body>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='fab fa-asymmetrik fa-spin' style='font-size:50px;width:100;color:blue'></i> Zero Error Mortgage</center></h1>
+    <div align="center">
+        <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Application</h2>
+        <form method="post" action="{{ url_for('ApplicationInformation', userid=userid) }}" >
+                        <input type="text" name="userRealName" placeholder="{{ row.user_realname }}" color="black" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="userCompany" placeholder="{{ row.user_company }}" color="black" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="empID" placeholder="{{ row.emp_id }}" color="black" style="..." required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="userPhoneNum" placeholder="{{ row.user_phone }}" color="black" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="userAddress" placeholder="{{ row.user_address }}" color="black" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="userMortgage" placeholder="{{ row.user_mortgage }}" color="black" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="submit" value="All Information Changed? Submit" />
+            </form>
+    </div>
+<br>
+    <div align="center">
+        <form method="get" action="{{ url_for('GoBack', userid=userid) }}" >
+
+                        <input type="submit" value="Nothing Changed? Go Back" />
+            </form>
+    </div>
+
+</body>
+</html>

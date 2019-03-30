@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Search Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Insurance Company</a>
+</nav>
+<div class="container">
+
+    <h1 class="cover-heading" align="center">Insurance Company</h1>
+    <p class="lead" align="center">Help you have a home</p>
+    <form method="get" action="{{ url_for('Home') }}" >
+        <h4 class="display-5" align="center">Insurance ID: {{ rows.ID }}</h4>
+        <h4 class="display-5" align="center">Name: {{ rows.name }}</h4>
+        <h4 class="display-5" align="center">Insurance Has Been Accepted: {{ rows.is_insurable }}</h4>
+        <h4 class="display-5" align="center">Insurance Value: {{ rows.insurance_value }}</h4>
+        <h4 class="display-5" align="center">Deductible Value: {{ rows.deductible_value }}</h4>
+        <h4 class="display-5" align="center">Property Value: {{ rows.property_value }}</h4>
+        <br>
+        <input class="btn btn-primary" role="button" type="submit" value="Go Back" />
+            </form>
+
+</div>
+</body>
+</html>
+
+<body>
+</body>
+</html>

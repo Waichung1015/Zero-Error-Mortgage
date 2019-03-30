@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employer's Portal Home Page</title>
+</head>
+<body>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='glyphicon glyphicon-cloud' style='font-size:50px;width:100;color:grey'></i> Welcome to Employer's Portal</center></h1>
+    <div align="center">
+        <style>
+           ul {list-style-type: none;margin: 0;padding: 0;width: 200px;background-color: #f1f1f1;}
+           li a {display: block;color: #000;padding: 10px 18px;text-decoration: none;}
+           li a:hover {background-color: #4CAF50;color: white;text-decoration: none;}
+         </style>
+         <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Menu</h2>
+         <ul>
+             <li><a href="{{ url_for('Authentication') }}?{{ empid }}">Employee Authentication</a></li>
+             <li><a href="{{ url_for('Help') }}?{{ empid }}">Employer Form</a></li>
+         </ul>
+    </div>
+
+</body>
+</html>

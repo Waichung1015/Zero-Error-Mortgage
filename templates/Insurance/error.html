@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Insurance Company</a>
+</nav>
+<div class="container">
+
+    <h1 class="cover-heading" align="center">Insurance Company</h1>
+    <p class="lead" align="center">Help you have a home</p>
+
+    <br>
+    <h4 class="display-5" align="center">Sorry, there is no any result..</h4>
+    <br>
+    <form method="get" action="{{ url_for('Home') }}" >
+
+        <input class="btn btn-primary" role="button" type="submit" value="Go To Home Page" />
+            </form>
+
+</div>
+</body>
+</html>
