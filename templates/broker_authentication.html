@@ -4,19 +4,15 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='fab fa-asymmetrik fa-spin' style='font-size:50px;width:100;color:blue'></i> Zero Error Mortgage</center></h1>
     <div align="center">
-        <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Get what you want immediately</h2>
-        <form method="post" action="{{ url_for('get_home') }}" >
+        <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Please enter your email and security token to authenticate</h2>
+        <form method="post" action="{{ url_for('broker_authentication', userid=userid) }}" >
                         <input type="text" name="email" placeholder="email.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
-                        <input type="text" name="password" placeholder="password.." color="grey"
+                        <input type="text" name="token" placeholder="token.." color="grey"
                                style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
-                        <input type="submit" value="Sign in" />
+                        <input type="submit" value="Submit" />
             </form>
-        <p style='"Comic Sans MS", cursive, sans-serif'> No account? <a href="./broker_signUp.html">Sign up </a>here</p>
-        <p><a href="{{ url_for('oauth_login', provider='facebook') }}">Login with Facebook</a></p>
-        <p><a href="{{ url_for('oauth_login', provider='github') }}">Login with GitHub</a></p>
-
-        <!-- <p style='"Comic Sans MS", cursive, sans-serif'> Or forget your password? <a href="./broker_reset_password.html">Reset password </a>here</p> -->
         <!--<h1>Zero Error Mortgage</h1>//-->
+        <p style='"Comic Sans MS", cursive, sans-serif'> Or forget your token?<a href="{{ url_for('delete_record_confirm', userid=userid) }}">Apply another one</a></p>
     </div>
 
 </head>

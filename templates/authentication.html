@@ -10,7 +10,9 @@
     <div align="center">
     <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Employee Authentication</h2>
         <form method="post" action="{{ url_for('Authentication') }}" >
+
                         <input type="text" name="empID" placeholder="employee ID.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                        <input type="text" name="empName" placeholder="Your Name.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
                         <input type="submit" value="authenticate"/><br>
             </form>
     </div>

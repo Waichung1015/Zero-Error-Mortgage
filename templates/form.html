@@ -10,12 +10,14 @@
     <div align="center">
     <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Employee Form</h2>
         <form method="post" action="{{ url_for('EmployerPortalForm', empid=empid) }}" >
-                        <input type="text" name="mortgageID" placeholder="Mortgage ID .. " color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
-                        <input type="text" name="url" placeholder="link to broker web service.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
-                        <button type="submit">Save</button>
+
+                <input type="text" name="company" placeholder="The Mortgage Company you applying for.." color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+
+                <input type="text" name="mortgageID" placeholder="Mortgage ID .. " color="grey" style="height: 40px;width:200px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+                <button type="submit">Save</button>
             </form>
         <br>
-        <a href="{{ url_for('ViewAgree', empid=empid) }}">Ready to Agree</a>
+        <a href="{{ url_for('Agree', empid=empid) }}">Ready to Agree</a>
     </div>
 
 </body>
