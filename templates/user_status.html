@@ -26,7 +26,9 @@
             <ol>Application Number: {{ rows.mortgage_id }}</ol>
             <ol>Employee Form submission: {{ rows.have_submitted }}</ol>
             <ol>Employer filled the form: {{ rows.have_emp_help }}</ol>
+            <form action="{{ url_for('employer_letter', userid=userid) }}" method="get"><button type="submit">Or Have Employment Letter Ready</button></form>
             <ol>Insurance Accepted: {{ rows.is_insurable }}</ol>
+            <form action="{{ url_for('insurance_letter', userid=userid) }}" method="get"><button type="submit">Or Have Insurance Letter Ready</button></form>
             </ul>
             <ol><form action="{{ url_for('broker_userMenu', userid=userid) }}" method="get">
                <button type="submit">return to user menu</button>

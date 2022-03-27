@@ -19,18 +19,25 @@
         <div class="from-group">
         <label for="name">Name: </label>
         <input type="text" class="form-control" name="name" id="name" placeholder="Enter your real name.."
-        required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/>
     <br>
     </div>
         <div class="from-group">
-        <label for="InsincID">Insurance ID: </label>
-        <input type="text" class="form-control" name="InsincID" id="InsincID" placeholder="Enter insurance ID.."
-        required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
+        <label for="address">The address you applied for: </label>
+        <input type="text" class="form-control" name="address" id="address" placeholder="Enter address.."
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/>
 
     </div>
         <br>
         <input class="btn btn-primary" role="button" type="submit" value="Search Now" />
             </form>
+    <br>
+    <p class="lead">Or not applied yet..?</p>
+    <br>
+    <form method="get" action="{{ url_for('insurance_apply') }}" >
+        <input class="btn btn-primary" role="button" type="submit" value="Start an Application" />
+
+    </form>
 
 </div>
 </body>

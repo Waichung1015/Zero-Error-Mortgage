@@ -9,14 +9,13 @@
     <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='fab fa-asymmetrik fa-spin' style='font-size:50px;width:100;color:blue'></i> Zero Error Mortgage</center></h1>
     <div align="center">
         <h2 style='"Comic Sans MS", cursive, sans-serif;font-size:150%;line-height: 4.5;'>Application</h2>
-        <form method="post" action="{{ url_for('ApplicationInformation', userid=userid) }}" >
+        <form method="post" action="{{ url_for('ForgetToken', userid=userid) }}" >
                         <input type="text" name="userRealName" placeholder="your realname.. " color="grey" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
                         <input type="text" name="userCompany" placeholder="your company.. " color="grey" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
                         <input type="number" name="empID" placeholder="your employee ID.." color="grey" style="..."required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
                         <input type="text" name="userPhoneNum" placeholder="your phone number.." color="grey" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
                         <input type="text" name="userAddress" placeholder="Address.." color="grey" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
                         <input type="number" name="userMortgage" placeholder="Mortgage amount.." color="grey" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
-                        <input type="text" name="address" placeholder="Real Estate address.." color="grey" style="height: 40px;width:400px" required="" oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
             <input type="submit" value="Submit" />
             </form>
     </div>

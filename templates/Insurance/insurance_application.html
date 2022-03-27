@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Insurance Company</a>
+</nav>
+<div class="container">
+
+    <h1 class="cover-heading" align="center">Insurance Company</h1>
+    <p class="lead" align="center">Help you have a home</p>
+    <form method="post" action="{{ url_for('insurance_apply') }}" >
+        <div class="from-group">
+        <label for="name">Name: </label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your real name.."
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/>
+    </div>
+        <div class="from-group">
+        <label for="address">Address of the Real Estate: </label>
+        <input type="text" class="form-control" name="address" id="address" placeholder="Enter address.."
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/>
+
+    </div>
+        <div class="from-group">
+        <label for="value">Value the Real Estate: </label>
+        <input type="number" class="form-control" name="value" id="value" placeholder="$.."
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/>
+
+    </div>
+        <div class="from-group">
+        <label for="work_company">The company you're working for: </label>
+        <input type="text" class="form-control" name="company" id="company" placeholder="Enter company name.."
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/>
+
+    </div>
+
+        <div class="from-group">
+        <label for="work_depart">The department you're currently working in: </label>
+        <input type="text" class="form-control" name="department" id="department" placeholder="Enter department you are working in.."
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/>
+
+    </div>
+        <div class="from-group">
+        <label for="salary">Salary: </label>
+        <input type="number" class="form-control" name="salary" id="salary" placeholder="$.."
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/><br>
+
+    <select select class="custom-select custom-select-sm" name="reviewed" multiple title="Has Been Reviewed by Real Estate Company?">
+      <optgroup label="Has Been Reviewed by Real Estate Company?">
+        <option value="yes">Yes</option>
+        <option value="no">Not yet</option>
+      </optgroup>
+    </select><br>
+    <br>
+        <div class="from-group">
+        <label for="reviewed_com">If yes, Reviewed by: </label>
+        <input type="text" class="form-control" name="reviewed_com" id="reviewed_com" placeholder="Reviewed Company Name.."
+        required oninvalid="this.setCustomValidity('Please enter all required info')"/>
+
+    </div>
+    <div class="from-group">
+    <label for="result">Reviewed Result Order Number: </label>
+    <input type="text" class="form-control" name="result" id="result" placeholder="Your reviewed result order number.."
+    required oninvalid="this.setCustomValidity('Please enter all required info')"/>
+
+    </div>
+    <br>
+        <input class="btn btn-primary" role="button" type="submit" value="Submit" />
+            </form>
+
+</div>
+</body>
+</html>
