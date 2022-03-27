@@ -33,21 +33,28 @@
 <div class="container"><br>
 <form method="post" action="{{ url_for('form', userid=userid) }}">
     <div class="from-group">
-        <label for="MIsID">House ID: </label>
-        <input type="text" class="form-control" name="MIsID" id="MIsID" placeholder="Enter house ID.."
-        required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
+        <label for="email">Email: </label>
+        <input type="text" class="form-control" name="email" id="email" placeholder="Your email.."
+        required="" data-bv-notempty-message="Cannot be empty"/>
 
     </div>
     <div class="from-group">
         <label for="name">Name: </label>
         <input type="text" class="form-control" name="Name" id="name" placeholder="Enter full name.."
-        required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
+        required="" data-bv-notempty-message="Cannot be empty"/>
 
     </div>
     <div class="from-group">
-        <label for="mortgageID">Mortgage ID: </label>
-        <input type="text" class="form-control" name="mortgage_id" id="mortgageID" placeholder="Enter mortgage ID.."
-        required="" oninvalid="this.setCustomValidity('Please enter all required info')"/>
+        <label for="phone">phone: </label>
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone.."
+        required="" data-bv-notempty-message="Cannot be empty"/>
+
+    </div>
+
+    <div class="from-group">
+        <label for="address">The property's address: </label>
+        <input type="text" class="form-control" name="address" id="address" placeholder="address of the property.."
+        required="" data-bv-notempty-message="Cannot be empty"/>
 
     </div>
     <br>
