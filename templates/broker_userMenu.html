@@ -13,16 +13,17 @@
            li a {display: block;color: #000;padding: 10px 18px;text-decoration: none;}
            li a:hover {background-color: #4CAF50;color: white;}
          </style>
-         <h2 align="center">Welcome, your id: {{ userid }}, username: {{ username }}</h2>
+            <h2 align="center">Welcome, your id: {{ userid }}, username: {{ username }}</h2>
+
         <form action="{{ url_for('broker_MortgageStatus', userid=userid) }}" style="..." method="get">
             <button type="submit">Mortgage Status</button>
         </form>
 
-        <form action="{{ url_for('ApplicationInformation', userid=userid) }}" style="..." method="get">
+        <form action="{{ url_for('broker_authentication', userid=userid) }}" style="..." method="get">
             <button type="submit">Mortgage Application</button>
         </form>
 
-        <form action="{{ url_for('broker_home') }}" style ="line-height: 3" method="get">
+        <form action="{{ url_for('logout') }}" style ="line-height: 3" method="get">
             <button type="submit">Log out</button>
       </form>
     </div>

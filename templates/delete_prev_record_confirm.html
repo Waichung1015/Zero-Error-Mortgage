@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete your previous Mortgage Application Confirmation</title>
+</head>
+<body>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <h1 style='front-family:"Comic Sans MS", cursive, sans-serif;'><center><i class='fab fa-asymmetrik fa-spin' style='font-size:50px;width:100;color:blue'></i> Zero Error Mortgage</center></h1>
+    <div align="center">
+        <h2 align="center">This page is to comfirm you forget your own Token for the previous application</h2>>
+
+        <h3 align="center">Below is a button. If you click on it, we will delete your previous application record and direct you to a NEW Application</h3>>
+
+        <form action="{{ url_for('ForgetToken', userid=userid) }}" style ="line-height: 3" method="get">
+            <button type="submit">Confirm</button>
+      </form>
+
+        <p style='"Comic Sans MS", cursive, sans-serif'> Or Not Forget Your Token? <a href="{{ url_for('broker_authentication', userid=userid) }}">Go Back</a>here</p>
+
+        </div>
+
+</body>
+</html>

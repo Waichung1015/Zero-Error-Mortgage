@@ -7,6 +7,10 @@
 <body>
 <h1>Submission Confirmation</h1>
 <p>We have recieved your application, your mortgage Number is: {{ mortgageid }}</p>
+<br>
+<p>For credential purpose, we have generated a security token for you to access your application</p>
+<br>
+<p>Please remember your token, your token: {{ token }}</p>
 <form method="post" action="{{ url_for('broker_userMenu', userid=userid) }}">
     <button type="submit">Return to User Menu</button>
 </form>

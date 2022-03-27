@@ -15,14 +15,14 @@
 
     <h1 class="cover-heading" align="center">Insurance Company</h1>
     <p class="lead" align="center">Help you have a home</p>
-
-    <br>
-    <h4 class="display-5" align="center">Sorry, there is no any result yet..</h4>
-    <br>
-    <form method="get" action="{{ url_for('Home') }}" >
-
-        <input class="btn btn-primary" role="button" type="submit" value="Go To Home Page" />
+    <form method="get" action="{{ url_for('insurance_search') }}" >
+        
+        <br>
+        <p class="lead" align="center">Congrations! We successfully recieved your application</p>
+        <p class="lead" align="center">You can use your Name and Property Address to check final insurance decision</p>
+        <input class="btn btn-primary" role="button" type="submit" value="Return to Home page" />
             </form>
+    <br>
 
 </div>
 </body>
